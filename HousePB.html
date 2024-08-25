@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/fontawesome-free-5.10.2-web/css/all.min.css"> 
+    <title>HouseOnRent 🏠</title>
+    <style>
+
+
+body
+ {
+    background-color:rgb(5, 109, 150);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+   }
+
+div
+{
+  padding: 7px;
+}
+
+#myUL{list-style: none;padding: 0; margin: 0;}
+
+#imge
+{
+  height: 600px;
+  width: 100%;
+
+}
+
+#article
+{
+  margin-top: 70px;
+}
+
+#card1
+{ 
+  margin-left:200px;
+  margin-right: 200px;
+}
+
+.card
+{
+  box-shadow: 7px 7px 7px black; 
+}
+
+#card2
+{
+  margin-left:100px;
+  margin-right: 100px;
+}
+
+blockquote>h1
+{
+  color:white ;
+  padding:10px;
+  font-family: monospace, fantasy;
+}
+
+#image
+{
+  height: 400px;
+  width: 600px;
+}
+
+#carouselExampleSlidesOnly
+{
+  margin-left:100px;
+  margin-right: 100px;
+  margin-bottom:50px;
+  background-color: yellow;
+}
+
+#articleI
+{
+  text-align: center;
+  background-image:  linear-gradient(to right,rgb(5, 109, 150),rgb(160, 201, 218),rgb(5, 109, 150));
+  margin:10px;
+  padding: 20px;
+  font-size: 30px;
+  font-family: 'Trebuchet MS';
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+#footer
+{
+  height: 350px;
+  background-color: black;
+  margin-bottom: 1px;
+}
+table
+{
+ background-color: black;
+ width: 50%;
+ margin: auto;
+ border-collapse: collapse;
+}
+th,td{text-align: center; padding: 10px;}
+tr>td{color: gainsboro;}
+.fab{margin:30px;}
+td>a{text-decoration:none;}
+td>a:hover{color: yellow; text-decoration: none;}
+
+
+.bottom{
+  background-color: black;
+  text-align: center;
+  color: blanchedalmond;
+}
+
+    </style>
+</head>
+<body>
+<!--Menu Bar S-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" >
+      <a class="navbar-brand" href="#">HOUSE ON RENT</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        <a class="nav-link" href="/HTMLCSS/HTML/HouseProject/HousePB.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    FOR
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <a class="dropdown-item" href ="/HTMLCSS/HTML/HouseProject/signup.html">BOYS</a>
+    <a class="dropdown-item" href ="/HTMLCSS/HTML/HouseProject/signup.html">GIRLS</a>
+    <a class="dropdown-item" href ="/HTMLCSS/HTML/HouseProject/signup.html">FAMILY</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href ="/HTMLCSS/HTML/HouseProject/signup.html">OTHERS</a>
+    </div>
+    </li>
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> LOCATION </a>
+     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <ul id="myUL">
+     <li><a class="dropdown-item" href="/HTMLCSS/HTML/HouseProject/signup.html">Indore</a></li>
+     <li><a class="dropdown-item" href="/HTMLCSS/HTML/HouseProject/signup.html">Ujjain</a></li>
+     <li><a class="dropdown-item" href="/HTMLCSS/HTML/HouseProject/signup.html">Dewas</a></li>
+     <li><a class="dropdown-item" href="/HTMLCSS/HTML/HouseProject/signup.html">Bhopal</a></li>
+    </ul>
+    </div>
+    </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+        <a class="nav-link" href="/HTMLCSS/HTML/HouseProject/signup.html">SCHEDULE VISITS</a>
+    <input class="form-control mr-sm-2" id="myInput" onkeyup="myFunction()" type="search" placeholder="Enter location" aria-label="Search" title="Search your location">
+    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+    <a class="nav-link" href ="/HTMLCSS/HTML/HouseProject/signup.html">LOGIN/REGISTER</a>
+    </form>
+    </div>
+    </nav> 
+ <!--Menu Bar E-->   
+ <!--Article S--> 
+ <div class="blockquote text-center text-dark" id="article">
+    <img src="/HTMLCSS/Images/Logo.PNG" id="imge" class="img-fluid" alt="Responsive image">
+  </div>
+
+    <div id="articleI">Don't worry! We will not find a House but a HOME for you.<br>
+       Live in a fully furnished home as per your comfort instead of being a Paying Guest.<br>
+      Just tie your shoes and get ready to shift. 
+    </div>
+
+<!--Article E-->
+  <div id="card1">
+     <div class="card-deck text-center">
+      <div class="card">
+        <img src="/HTMLCSS/Images/shared2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="font-family:fantasy;">Shared Rooms</h5>
+          <p class="card-text"> Rent a shared room accommodation with furnishing & fully functional kitchen for boys & girls.</p>
+          <br><a href="/HTMLCSS/HTML/HouseProject/signup.html" class="btn btn-warning">EXPLORE 2624 ROOMS</a>
+          <p class="card-text"><small class="text-muted">₹3500 - ₹100010</small></p> 
+        </div>
+      </div>
+      <div class="card">
+        <img src="/HTMLCSS/Images/familyroom.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="font-family:fantasy;">Full House</h5>
+          <p class="card-text">Rent a full Flat, apartment & villas with furnishing & fully functional kitchen for group of friends or family.</p>
+          <br><a href="/HTMLCSS/HTML/HouseProject/signup.html" class="btn btn-success">EXPLORE 5896 HOUSES</a>
+          <p class="card-text"><small class="text-muted">₹4000 - ₹175000</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/HTMLCSS/Images/private.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="font-family:fantasy;">Private Rooms</h5>
+          <p class="card-text">Rent a single room accommodation with furnishing & fully functional kitchen for boys & girls.</p>
+            <br><a href="//HTMLCSS/HTML/HouseProject/signup.html" class="btn btn-danger">EXPLORE 2624 ROOMS</a><br>
+          <p class="card-text"><small class="text-muted">₹3500 - ₹500050</small></p>
+        </div>
+      </div>
+    </div>  
+  </div>
+    <!--Card1 E-->
+    <blockquote class="blockquote text-center row-4">
+            <p class="mb-0"><h1>Popular Localities of city</h1></p>
+    </blockquote>
+    
+    <div id="card2">
+
+    <div class="card-deck text-center">
+            <div class="card">
+              <img src="/HTMLCSS/Images/kalanibagh.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Civil Lines</h5>
+                <p class="card-text"><small class="text-muted">1 BHK, 2 BHK, 3 BHK Flats/houses available in Dewas.<br>Starting Price</small></p>
+                <p class="card-text">Rs. 3000</p>
+                <br><a href="/
+  /HTMLCSS/HTML/HouseProject/signup.html" class="btn btn-warning">EXPLORE</a>
+            </div>
+            </div>
+            <div class="card">
+              <img src="/HTMLCSS/Images/civil lines.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mahananda Nagar</h5>
+                <p class="card-text"><small class="text-muted">1 BHK, 2 BHK, 3 BHK Flats/houses available in Ujjain.<br>Starting Price</small></p>
+                <p class="card-text">Rs. 3000</p>
+                <br><a href="/
+  /HTMLCSS/HTML/HouseProject/signup.html" class="btn btn-warning">EXPLORE</a>
+            </div> 
+            </div>
+            <div class="card">
+              <img src="/HTMLCSS/Images/vijayN.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bengali Square</h5>
+                <p class="card-text"><small class="text-muted">1 BHK, 2 BHK, 3 BHK Flats/houses available in Indore.<br>Starting Price</small></p>
+                <p class="card-text">Rs. 3000</p>
+                <br><a href="/
+  /HTMLCSS/HTML/HouseProject/signup.html" class="btn btn-warning">EXPLORE</a>
+            </div>
+            </div>
+            <div class="card">
+              <img src="/HTMLCSS/Images/Awaas.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+              <h5 class="card-title">Kolar Road</h5>
+              <p class="card-text"><small class="text-muted">1 BHK, 2 BHK, 3 BHK Flats/houses available in Bhopal.<br>Starting Price</small></p>
+              <p class="card-text">Rs. 3000</p>          
+              <br><a href="/
+/HTMLCSS/HTML/HouseProject/signup.html" class="btn btn-warning">EXPLORE</a>
+            </div>
+            </div>
+          </div>
+        </div>
+
+    <!--Card2 E-->
+    <blockquote class="blockquote text-center row-4">
+            <p class="mb-0"><h1>Some valuable feedbacks from our Happy Customers</h1></p>
+    </blockquote>      
+          <!--Carousel-->
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="slide">
+                      <div class="card-deck">
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title" style="font-family:fantasy;">In Social Media<img src="/HTMLCSS/Images/fdb1.jpg" alt="..." class="rounded-circle" style="height: 60px; width: 60px; float: right;"></h5>
+                              <br><br><p class="card-text">
+                                  Its been 2 years, I have been staying in HouseOnRent. What a venture in the startup ecosystem, no hassles to find a perfect home, perfect owner and perfect flatmates.
+                                  Recommend all to choose HouseOnRent homes, thay make you feel your in home all away from.homes.:)Thank you
+                                 <br> XYZ.
+                                  </p>
+                            </div>
+                            <div class="card-footer">
+                              <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title" style="font-family:fantasy;">In Social Media <img src="/HTMLCSS/Images/fdb4.jpg" alt="..." class="rounded-circle" style="height: 60px; width: 60px; float: right;"></h5><br><br>
+                              <p class="card-text">Its been 2 years, I have been staying in HouseOnRent. What a venture in the startup ecosystem, no hassles to find a perfect home, perfect owner and perfect flatmates.
+                                  Recommend all to choose HouseOnRent homes, thay make you feel your in home all away from.homes.:)Thank you</p>
+                            </div>
+                            <div class="card-footer">
+                              <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title" style="font-family:fantasy;">In Social Media<img src="/HTMLCSS/Images/fdb2.jpg" alt="..." class="rounded-circle" style="height: 60px; width: 60px; float: right;"></h5><br><br>
+                              <p class="card-text">Its been 2 years, I have been staying in HouseOnRent. What a venture in the startup ecosystem, no hassles to find a perfect home, perfect owner and perfect flatmates.
+                                  Recommend all to choose HouseOnRent homes, thay make you feel your in home all away from.homes.:)Thank you</p>
+                            </div>
+                            <div class="card-footer">
+                              <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                          </div>
+                        </div>
+                      
+
+                  </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="slide">
+                        <div class="card-deck">
+                            <div class="card">
+                              <div class="card-body">
+                                <h5 class="card-title" style="font-family:fantasy;">In Social Media<img src="/HTMLCSS/Images/fdb5.jpg" alt="..." class="rounded-circle" style="height: 60px; width: 60px; float: right;"></h5><br><br>
+                                <p class="card-text">Its been 2 years, I have been staying in HouseOnRent. What a venture in the startup ecosystem, no hassles to find a perfect home, perfect owner and perfect flatmates.
+                                    Recommend all to choose HouseOnRent homes, thay make you feel your in home all away from.homes.:)Thank you</p>
+                              </div>
+                              <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-body">
+                                <h5 class="card-title" style="font-family:fantasy;">In Social Media<img src="/HTMLCSS/Images/fdb3.jpg" alt="..." class="rounded-circle" style="height: 60px; width: 60px; float: right;"></h5><br><br>
+                                <p class="card-text">Its been 2 years, I have been staying in HouseOnRent. What a venture in the startup ecosystem, no hassles to find a perfect home, perfect owner and perfect flatmates.
+                                    Recommend all to choose HouseOnRent homes, thay make you feel your in home all away from.homes.:)Thank you</p>
+                              </div>
+                              <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-body">
+                                <h5 class="card-title" style="font-family:fantasy;">In Social Media<img src="/HTMLCSS/Images/fdb6.jpg" alt="..." class="rounded-circle" style="height: 60px; width: 60px; float: right;"></h5><br><br>
+                                <p class="card-text">Its been 2 years, I have been staying in HouseOnRent. What a venture in the startup ecosystem, no hassles to find a perfect home, perfect owner and perfect flatmates.
+                                    Recommend all to choose HouseOnRent homes, thay make you feel your in home all away from.homes.:)Thank you</p>
+                              </div>
+                              <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+          </div> 
+  <!--Footer-->
+          <div id="footer">
+              <table>
+                  <tr>
+                    <th style="color: white;">HouseOnRent</th>
+                    <th style="color: white;">More information</th>
+
+                  </tr>
+                  <tr>
+                    <td><a href="">About Us</a></td>
+                    <td><a href="">FAQ</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="">Work with us</a></td>
+                    <td><a href="">Tenancy Policies</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="">Contact us</a></td>
+                    <td><a href="">Privacy Policies</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="">Blog</a></td>
+                    <td><a href="">House shifting services</a></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td><a href="">Terms & Conditions</a></td>
+                  </tr>
+                </table>
+                <div style="text-align: center;">
+                <i class="fab fa-facebook-f fa-2x"aria-hidden="true" style="color: rgb(6, 69, 240);"></i>
+                      <i class="fab fa-instagram fa-2x"aria-hidden="true" style="color: rgb(233, 75, 220);"></i>
+                      <i class="fab fa-twitter fa-2x" aria-hidden="true" style="color: skyblue;"></i>
+                      <i class="fab fa-youtube fa-2x" aria-hidden="true" style="color: rgb(238, 56, 56);"></i>
+                      <i class="fab fa-linkedin fa-2x" aria-hidden="true" style="color: rgb(79, 116, 219);"></i>
+                      <i class="fab fa-google fa-2x" aria-hidden="true" style="color: rgb(240, 236, 6);"></i></div>
+            </div>
+          <div class="bottom">
+            created by sakshi bhabad
+          </div>
+          <!---->
+          <script>
+              function myFunction() {
+                  var input, filter, ul, li, a, i, txtValue;
+                  input = document.getElementById("myInput");
+                  filter = input.value.toUpperCase();
+                  ul = document.getElementById("myUL");
+                  li = ul.getElementsByTagName("li");
+                  for (i = 0; i < li.length; i++) {
+                      a = li[i].getElementsByTagName("a")[0];
+                      txtValue = a.textContent || a.innerText;
+                      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                          li[i].style.display = "";
+                      } else {
+                          li[i].style.display = "none";
+                      }
+                  }
+              }
+              </script>
+              
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</HTML>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+    <link rel='stylesheet' href='form-validate.css' type='text/css' />
+    <script src='validation.js'></script>
+    <style>
+     body
+     {  
+      background-color: #08AEEA;
+      background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+      background-repeat: no-repeat;
+      text-align: center;
+      font-size: 30px;
+      color: rgb(5, 109, 150); 
+     }
+
+     h3
+     { 
+        color:whitesmoke;
+        text-align: center;
+        font-size: 30px;
+     }
+
+     .div2
+     {
+        height:600px;
+        width: 900px; 
+        background-color:rgb(5, 109, 150);
+        margin:auto;
+        padding: 2px 30px 5px 30px;
+     }
+
+
+     #sign
+   {
+    position: absolute;
+    width: 400px;
+    height: 100%;
+   }
+
+     #login
+   
+   {  position: absolute;
+       left: 800px;
+       width: 400px;
+       height: 100%;
+       align-self: auto;
+       margin-top: 50px;
+   }
+
+     input
+     {
+        border: 1px solid black;
+        width: 400px;
+        height: 50px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+     }
+     
+     #button
+     {
+        border: 1px solid black;
+        background-color: rgb(5, 45, 78);
+        width: 300px;
+        margin-top: 0px;
+        margin-left: 30px;
+        height:50px;
+        font-size: 30px;
+        color: blanchedalmond;
+        font-family: 'Trebuchet MS';
+     }
+
+     #button:hover
+   {
+       color:black;
+   }
+
+   h1,p{margin: 20px;}
+   a{text-decoration: none; color:white;}
+   h6{color: white; margin:30px; font-size: 23px;}
+   
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to Login Page of HouseOnRent!</h1>
+     <p>For details please SignUp.</p>
+     
+     <div class="div2"> 
+           <div id ="sign">
+                <h3>SIGN-UP</h3>
+                <form name="signup" method="get" >
+                  <input type="text" name="userid" id="userid" placeholder="Username" >
+                  <input type="email" name="email" id="uemail" placeholder="Email" >
+                <input type="phone" name ="Phone" id ="phone" placeholder="Mobile No.">
+                  <input type="password" name="password" id="upass" placeholder="Password">
+                  <input type="password" name="password" id="upass" placeholder="Confirm Password">
+                 <input id="button" type="submit" onclick="return formValidation();" formaction="/HTML/HouseProject/Login.html" value="SIGN UP">
+               </form>
+            </div>
+               <div id="login">
+                     <h6>Already have an account?&nbsp;<a href="/HTMLCSS/HTML/HouseProject/Login.html">Log In.</a></h6>
+                     <img src="/HTMLCSS/Images/SignBG.jpg" style="height: 350px;width: 350px;">
+                  </div>
+            </div>
+</body>
+</html>

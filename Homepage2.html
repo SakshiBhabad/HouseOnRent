@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel="stylesheet" href="/fontawesome-free-5.10.2-web/css/all.min.css"> 
+    <title>Homepage2</title>
+    <style>
+
+
+body
+ {
+    background-color:rgb(5, 109, 150);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+   }
+
+div
+{
+  padding: 7px;
+}
+
+#myUL{list-style: none;padding: 0; margin: 0;}
+
+#imge
+{
+  height: 500px;
+  width: 100%;
+
+}
+
+#article
+{
+  margin-top: 70px;
+}
+
+#card1
+{ 
+  margin-left:200px;
+  margin-right: 200px;
+}
+
+.card
+{
+  box-shadow: 7px 7px 7px black; 
+}
+
+#card2
+{
+  margin-left:100px;
+  margin-right: 100px;
+}
+
+blockquote>h1
+{
+  color:white ;
+  padding:10px;
+  font-family: monospace, fantasy;
+}
+
+#image
+{
+  height: 400px;
+  width: 600px;
+}
+
+#carousel
+{
+  margin-left:100px;
+  margin-right: 100px;
+  margin-bottom:200px ;
+  background-color: yellow;
+}
+
+#articleI
+{
+  text-align: center;
+  background-image:  linear-gradient(to right,rgb(5, 109, 150),rgb(160, 201, 218),rgb(5, 109, 150));
+  margin:10px;
+  padding: 20px;
+  font-size: 30px;
+  font-family: 'Trebuchet MS';
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+#gallery
+{
+  height:600px;
+  background-color: white;
+  margin:50px 50px 10px 50px;
+}
+
+.bottom{
+  background-color: black;
+  text-align: center;
+  color: blanchedalmond;
+}
+    </style>
+</head>
+<body>
+<!--Menu Bar S-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" >
+      <a class="navbar-brand" href="/HTMLCSS/HTML/HouseProject/Homepage2.html">HOUSE ON RENT</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    FOR
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <a class="dropdown-item" href="#">BOYS</a>
+    <a class="dropdown-item" href="#">GIRLS</a>
+    <a class="dropdown-item" href="#">FAMILY</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">OTHERS</a>
+    </div>
+    </li>
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> LOCATION </a>
+     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <ul id="myUL">
+            <li><a class="dropdown-item" href="/HTMLCSS/HTML/HouseProject/Indore.html">Indore</a></li>
+            <li><a class="dropdown-item" href="/HTMLCSS/HTML/HouseProject/Ujjain.html">Ujjain</a></li>
+            <li><a class="dropdown-item" href="/HTMLCSS/HTML/HouseProject/Dewas.html">Dewas</a></li>
+            <li><a class="dropdown-item" href="/HTMLCSS/HTML/HouseProject/Bhopal.html">Bhopal</a></li>
+           </ul>
+    </div>
+    </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+        <a class="nav-link" href="#">SCHEDULE VISITS</a>
+        <input class="form-control mr-sm-2" id="myInput" onkeyup="myFunction()" type="search" placeholder="Enter location" aria-label="Search" title="Search your location">
+    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+    <a class="nav-link" href="/HTMLCSS/HTML/HouseProject/HousePB.html">LOGOUT</a>
+    </form>
+    </div>
+    </nav> 
+ <!--Menu Bar E-->   
+ <!--Article S--> 
+ <div class="blockquote text-center text-dark" id="article">
+    <img src="/HTMLCSS/Images/Logo.PNG" id="imge" class="img-fluid" alt="Responsive image">
+  </div>
+
+    <div id="articleI">Don't worry! We will not find a House but a HOME for you.<br>
+       Live in a fully furnished home as per your comfort instead of being a Paying Guest.<br>
+      Just tie your shoes and get ready to shift. 
+    </div>
+
+<!--Article E-->
+  <div id="card1">
+     <div class="card-deck text-center">
+      <div class="card">
+        <img src="/HTMLCSS/Images/shared2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Shared Rooms</h5>
+          <p class="card-text"> Rent a shared room accommodation with furnishing & fully functional kitchen for boys & girls.</p>
+          <br><a href="#" class="btn btn-warning">EXPLORE 2624 ROOMS</a>
+          <p class="card-text"><small class="text-muted">₹3500 - ₹100010</small></p> 
+        </div>
+      </div>
+      <div class="card">
+        <img src="/HTMLCSS/Images/familyroom.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Full House</h5>
+          <p class="card-text">Rent a full Flat, apartment & villas with furnishing & fully functional kitchen for group of friends or family.</p>
+          <br><a href="#" class="btn btn-success">EXPLORE 5896 HOUSES</a>
+          <p class="card-text"><small class="text-muted">₹4000 - ₹175000</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/HTMLCSS/Images/private.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Private Rooms</h5>
+          <p class="card-text">Rent a single room accommodation with furnishing & fully functional kitchen for boys & girls.</p>
+            <br><a href="#" class="btn btn-danger">EXPLORE 2624 ROOMS</a><br>
+          <p class="card-text"><small class="text-muted">₹3500 - ₹500050</small></p>
+        </div>
+      </div>
+    </div>  
+  </div>
+    <!--Card1 E-->
+    <blockquote class="blockquote text-center row-4">
+            <p class="mb-0"><h1>Popular Localities of city</h1></p>
+    </blockquote>
+    
+    <div id="card2">
+
+    <div class="card-deck text-center">
+            <div class="card">
+              <img src="/HTMLCSS/Images/kalanibagh.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Kalani Bagh</h5>
+                <p class="card-text"><small class="text-muted">1 BHK, 2 BHK, 3 BHK Flats/houses available in Dewas.<br>Starting Price</small></p>
+                <p class="card-text">Rs. 3000</p>
+                <br><a href="/HTMLCSS/HTML/HouseProject/Dewas.html" class="btn btn-warning">EXPLORE</a>
+            </div>
+            </div>
+            <div class="card">
+              <img src="/HTMLCSS/Images/civil lines.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Nanakheda</h5>
+                <p class="card-text"><small class="text-muted">1 BHK, 2 BHK, 3 BHK Flats/houses available in Ujjain.<br>Starting Price</small></p>
+                <p class="card-text">Rs. 3000</p>
+                <br><a href="/HTMLCSS/HTML/HouseProject/Ujjain.html" class="btn btn-warning">EXPLORE</a>
+            </div> 
+            </div>
+            <div class="card">
+              <img src="/HTMLCSS/Images/vijayN.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Vijay Nagar</h5>
+                <p class="card-text"><small class="text-muted">1 BHK, 2 BHK, 3 BHK Flats/houses available Indore.<br>Starting Price</small></p>
+                <p class="card-text">Rs. 3000</p>
+                <br><a href="/HTMLCSS/HTML/HouseProject/Indore.html" class="btn btn-warning">EXPLORE</a>
+            </div>
+            </div>
+            <div class="card">
+              <img src="/HTMLCSS/Images/Awaas.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+              <h5 class="card-title">Navi Bagh</h5>
+              <p class="card-text"><small class="text-muted">1 BHK, 2 BHK, 3 BHK Flats/houses available in Bhopal.<br>Starting Price</small></p>
+              <p class="card-text">Rs. 3000</p>          
+              <br><a href="/HTMLCSS/HTML/HouseProject/Bhopal.html" class="btn btn-warning">EXPLORE</a>
+            </div>
+            </div>
+          </div>
+        </div>
+
+    <!--Card2 E-->
+    <blockquote class="blockquote text-center row-4">
+            <p class="mb-0"><h1>Photo gallery of our Happy Customers</h1></p>
+    </blockquote>  
+    
+    <div id="gallery">
+        <div class ="row ">
+          <div class="col-auto mr-auto">
+         <img src="/HTMLCSS/Images/hc9.jpg" style="height: 300px; width:250px ;" >
+          </div>
+          <div class= "col-auto mr-auto">
+          <img src="/HTMLCSS/Images/hc2.jpg" style="height:300px ; width:300px ;"/>
+          </div>
+          <div class= "col-auto mr-auto">
+              <img src="/HTMLCSS/Images/hc7.jpg" style="height:300px ; width:500px ;" />
+              </div>
+          <div class= "col-auto mr-auto">
+              <img src="/HTMLCSS/Images/hc4.jfif" style="height: 300px; width:250px ;" />
+          </div>
+        </div>
+   
+         <div class ="row">
+          <div class= "col-auto mr-auto">
+          <img src="/HTMLCSS/Images/hc1.jfif" style="height:200px ; width:500px;"/>
+          </div>
+          <div class= "col-auto mr-auto">
+            <img src="/HTMLCSS/Images/hc6.jfif" style="height:200px ; width:400px;" />
+        </div>
+          <div class= "col-auto mr-auto">
+            <img src="/HTMLCSS/Images/hc10.jpg" style="height:200px ; width:300px ;" />
+        </div>
+  
+        </div>
+      </div>
+          
+          <div class="bottom">
+            created by sakshi bhabad
+          </div>
+          <!---->
+          <script>
+              function myFunction() {
+                  var input, filter, ul, li, a, i, txtValue;
+                  input = document.getElementById("myInput");
+                  filter = input.value.toUpperCase();
+                  ul = document.getElementById("myUL");
+                  li = ul.getElementsByTagName("li");
+                  for (i = 0; i < li.length; i++) {
+                      a = li[i].getElementsByTagName("a")[0];
+                      txtValue = a.textContent || a.innerText;
+                      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                          li[i].style.display = "";
+                      } else {
+                          li[i].style.display = "none";
+                      }
+                  }
+              }
+              </script>
+                   
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
